@@ -24,7 +24,7 @@ while True:
                 raw_adc = (data[0] * 256) + data[1]
                 if raw_adc > 32767 :
                         raw_adc -= 65536
-                current = raw_adc * 0.001380
+                current = raw_adc * 0.001390
 # Output data to screen
                 print "Current Values on Channel one : %.2f" %current
         time.sleep(0.2)
