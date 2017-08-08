@@ -17,7 +17,6 @@ bus.write_byte(0x68, 0x18)
 time.sleep(0.2)
 while True:
         bus.write_byte(0x68, 0x18)
-        time.sleep(0.8)
         data = bus.read_i2c_block_data(0x68,0,3)
         data[2]= data[2] >>7
         if data[2]==0:
@@ -27,4 +26,4 @@ while True:
                 current = raw_adc * 0.001380
 # Output data to screen
                 print "Current Values on Channel one : %.2f" %current
-        time.sleep(0.1)
+       
