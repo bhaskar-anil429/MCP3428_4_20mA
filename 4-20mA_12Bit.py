@@ -1,3 +1,8 @@
+# Distributed with a free-will license.
+# Use it any way you want, profit or free, provided it fits in the licenses of its associated works.
+# MCP3428
+# This code is designed to work with the MCP3428_I2CADC I2C Mini Module available from ControlEverything.com.
+# https://shop.controleverything.com/collections/4-20-ma-current-loop-input
 import smbus
 import time
 
